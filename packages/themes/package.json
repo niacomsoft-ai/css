@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/niacomsoft-ai/css/issues"
   },
-  "homepage": "https://github.com/niacomsoft-ai/css#readme"
+  "homepage": "https://github.com/niacomsoft-ai/css#readme",
+  "files": [
+    "*.scss",
+    "*.css"
+  ]
 }
