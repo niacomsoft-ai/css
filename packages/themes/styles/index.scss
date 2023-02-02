@@ -12,6 +12,8 @@
     $-textsize-value in vars.$textsize-map {
         --def-text#{$-textsize-key}: #{div($-textsize-value, vars.$base-value)}rem;
     }
+
+    --def-font-family: "Microsoft Yahei"
 }
 
 .text {
@@ -40,6 +42,10 @@
         @extend .#{$-item};
         @extend .italic;
     }
+}
+
+* {
+    font-family: var(--def-font-family);
 }
 
 html {

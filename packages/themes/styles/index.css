@@ -12,6 +12,7 @@
   --def-text-xl: 1.25rem;
   --def-text-xxl: 1.375rem;
   --def-text-xxxl: 1.5rem;
+  --def-font-family: "Microsoft Yahei" ;
 }
 
 .text-reference, html {
@@ -60,4 +61,8 @@
 
 .bolder, .bolder-italic {
   font-weight: bolder;
+}
+
+* {
+  font-family: var(--def-font-family);
 }
