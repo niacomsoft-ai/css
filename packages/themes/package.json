@@ -2,7 +2,7 @@
   "name": "@niacomsoft/css-themes",
   "version": "1.0.0",
   "description": "CSS declaration!",
-  "main": "index.css",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/niacomsoft-ai/css.git"
@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/niacomsoft-ai/css#readme",
   "files": [
-    "*.scss",
-    "*.css"
+    "index.js",
+    "styles/**/*.css",
+    "styles/**/*.scss"
   ]
 }

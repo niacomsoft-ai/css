@@ -1,0 +1,11 @@
+$base-value: 16;
+$var-prefix: "--def-";
+
+$textsize-map: ("-base": $base-value,
+    "-sm": 14,
+    "-xs": 12,
+    "-xxs": 10,
+    "-lg": 18,
+    "-xl": 20,
+    "-xxl": 22,
+    "-xxxl": 24);

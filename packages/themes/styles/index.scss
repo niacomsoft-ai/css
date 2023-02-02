@@ -1,0 +1,47 @@
+/* ******************************************************************************************************************************************************* */
+/* LICENSED UNDER THE MIT LICENSE. SEE LICENSE FILE IN THE PROJECT ROOT FOR FULL LICENSE INFORMATION.                                                      */
+/* COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.                                                                                                */
+/* ******************************************************************************************************************************************************* */
+
+@use "sass:math"as *;
+@use "./lib/variables"as vars;
+
+:root {
+
+    @each $-textsize-key,
+    $-textsize-value in vars.$textsize-map {
+        --def-text#{$-textsize-key}: #{div($-textsize-value, vars.$base-value)}rem;
+    }
+}
+
+.text {
+    @at-root &-reference {
+        font-size: #{vars.$base-value}px;
+    }
+
+    @each $-textsize-key,
+    $-textsize-value in vars.$textsize-map {
+        @at-root &#{$-textsize-key} {
+            font-size: var(--def-text#{$-textsize-key});
+        }
+    }
+}
+
+.italic {
+    font-style: italic;
+}
+
+@each $-item in ("bold", "bolder") {
+    .#{$-item} {
+        font-weight: #{$-item};
+    }
+
+    .#{$-item}-italic {
+        @extend .#{$-item};
+        @extend .italic;
+    }
+}
+
+html {
+    @extend .text-reference;
+}
