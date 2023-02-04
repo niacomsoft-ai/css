@@ -12,7 +12,7 @@
   --def-text-xl: 1.25rem;
   --def-text-xxl: 1.375rem;
   --def-text-xxxl: 1.5rem;
-  --def-font-family: "Microsoft Yahei" ;
+  --def-font-family: "Microsoft Yahei";
 }
 
 .text-reference, html {
@@ -61,6 +61,109 @@
 
 .bolder, .bolder-italic {
   font-weight: bolder;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative, div {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex, .flex-wrap-reverse, .flex-wrap, .flex-nowrap, .flex-column-reverse, .flex-column, .flex-row-reverse, .flex-row, .align-items-stretch, .align-items-baseline, .align-items-end, .align-items-start, .align-items-center, .justify-content-around, .justify-content-between, .justify-content-end, .justify-content-start, .justify-content-center {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-baseline {
+  align-items: baseline;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex > .average-grow, .justify-content-center > .average-grow, .justify-content-start > .average-grow, .justify-content-end > .average-grow, .justify-content-between > .average-grow, .justify-content-around > .average-grow, .align-items-center > .average-grow, .align-items-start > .average-grow, .align-items-end > .average-grow, .align-items-baseline > .average-grow, .align-items-stretch > .average-grow, .flex-row > .average-grow, .flex-row-reverse > .average-grow, .flex-column > .average-grow, .flex-column-reverse > .average-grow, .flex-nowrap > .average-grow, .flex-wrap > .average-grow, .flex-wrap-reverse > .average-grow {
+  flex-grow: 1;
+}
+.flex > .noshrink, .justify-content-center > .noshrink, .justify-content-start > .noshrink, .justify-content-end > .noshrink, .justify-content-between > .noshrink, .justify-content-around > .noshrink, .align-items-center > .noshrink, .align-items-start > .noshrink, .align-items-end > .noshrink, .align-items-baseline > .noshrink, .align-items-stretch > .noshrink, .flex-row > .noshrink, .flex-row-reverse > .noshrink, .flex-column > .noshrink, .flex-column-reverse > .noshrink, .flex-nowrap > .noshrink, .flex-wrap > .noshrink, .flex-wrap-reverse > .noshrink {
+  flex-shrink: 0;
 }
 
 * {

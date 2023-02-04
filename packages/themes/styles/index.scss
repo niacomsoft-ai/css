@@ -3,51 +3,107 @@
 /* COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.                                                                                                */
 /* ******************************************************************************************************************************************************* */
 
-@use "sass:math"as *;
-@use "./lib/variables"as vars;
+@use "sass:math" as *;
+@use "sass:map" as *;
+@use "./lib/variables" as vars;
 
 :root {
+	@each $-textsize-key, $-textsize-value in vars.$textsize-map {
+		--def-text#{$-textsize-key}: #{div($-textsize-value, vars.$base-value)}rem;
+	}
 
-    @each $-textsize-key,
-    $-textsize-value in vars.$textsize-map {
-        --def-text#{$-textsize-key}: #{div($-textsize-value, vars.$base-value)}rem;
-    }
-
-    --def-font-family: "Microsoft Yahei"
+	--def-font-family: "Microsoft Yahei";
 }
 
 .text {
-    @at-root &-reference {
-        font-size: #{vars.$base-value}px;
-    }
+	@at-root &-reference {
+		font-size: #{vars.$base-value}px;
+	}
 
-    @each $-textsize-key,
-    $-textsize-value in vars.$textsize-map {
-        @at-root &#{$-textsize-key} {
-            font-size: var(--def-text#{$-textsize-key});
-        }
-    }
+	@each $-textsize-key, $-textsize-value in vars.$textsize-map {
+		@at-root &#{$-textsize-key} {
+			font-size: var(--def-text#{$-textsize-key});
+		}
+	}
 }
 
 .italic {
-    font-style: italic;
+	font-style: italic;
 }
 
 @each $-item in ("bold", "bolder") {
-    .#{$-item} {
-        font-weight: #{$-item};
-    }
+	.#{$-item} {
+		font-weight: #{$-item};
+	}
 
-    .#{$-item}-italic {
-        @extend .#{$-item};
-        @extend .italic;
-    }
+	.#{$-item}-italic {
+		@extend .#{$-item};
+		@extend .italic;
+	}
+}
+
+@each $-item in ("absolute", "relative", "fixed") {
+	.#{$-item} {
+		position: #{$-item};
+	}
+}
+
+@each $-item in ("block", "inline", "inline-block", "flex") {
+	.#{$-item} {
+		display: #{$-item};
+	}
+}
+
+.justify-content {
+	@each $-key, $-value in deep-merge(vars.$flexalign-basemap, vars.$flexalign-horizontalmap) {
+		@at-root &-#{$-key} {
+			@extend .flex;
+			justify-content: #{$-value};
+		}
+	}
+}
+
+.align-items {
+	@each $-key, $-value in deep-merge(vars.$flexalign-basemap, vars.$flexalign-verticalmap) {
+		@at-root &-#{$-key} {
+			@extend .flex;
+			align-items: #{$-value};
+		}
+	}
+}
+
+.flex {
+	@each $-item in vars.$flexdirection-list {
+		@at-root &-#{$-item} {
+			@extend .flex;
+			flex-direction: #{$-item};
+		}
+	}
+
+	@each $-item in vars.$flexwrap-list {
+		@at-root &-#{$-item} {
+			@extend .flex;
+			flex-wrap: #{$-item};
+		}
+	}
+
+	> .average-grow {
+		flex-grow: 1;
+	}
+
+	> .noshrink {
+		flex-shrink: 0;
+	}
 }
 
 * {
-    font-family: var(--def-font-family);
+	font-family: var(--def-font-family);
+}
+
+div {
+	@extend .relative;
 }
 
 html {
-    @extend .text-reference;
+	@extend .text-reference;
 }

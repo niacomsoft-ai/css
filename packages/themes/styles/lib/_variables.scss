@@ -1,11 +1,33 @@
 $base-value: 16;
 $var-prefix: "--def-";
 
-$textsize-map: ("-regular": $base-value,
-    "-sm": 14,
-    "-xs": 12,
-    "-xxs": 10,
-    "-lg": 18,
-    "-xl": 20,
-    "-xxl": 22,
-    "-xxxl": 24);
+$textsize-map: (
+	"-regular": $base-value,
+	"-sm": 14,
+	"-xs": 12,
+	"-xxs": 10,
+	"-lg": 18,
+	"-xl": 20,
+	"-xxl": 22,
+	"-xxxl": 24,
+);
+
+$flexalign-basemap: (
+	"center": "center",
+	"start": "flex-start",
+	"end": "flex-end",
+);
+
+$flexalign-horizontalmap: (
+	"between": "space-between",
+	"around": "space-around",
+);
+
+$flexalign-verticalmap: (
+	"baseline": "baseline",
+	"stretch": "stretch",
+);
+
+$flexdirection-list: ("row", "row-reverse", "column", "column-reverse");
+
+$flexwrap-list: ("nowrap", "wrap", "wrap-reverse");
