@@ -4,7 +4,7 @@
 /* COPYRIGHT © 2006 - 2023 WANG YUCAI. ALL RIGHTS RESERVED.                                                                                                */
 /* ******************************************************************************************************************************************************* */
 :root {
-  --def-text-base: 1rem;
+  --def-text-regular: 1rem;
   --def-text-sm: 0.875rem;
   --def-text-xs: 0.75rem;
   --def-text-xxs: 0.625rem;
@@ -19,8 +19,8 @@
   font-size: 16px;
 }
 
-.text-base {
-  font-size: var(--def-text-base);
+.text-regular {
+  font-size: var(--def-text-regular);
 }
 
 .text-sm {
