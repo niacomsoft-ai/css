@@ -13,6 +13,7 @@
 		--def-text#{$-textsize-key}: #{div($-textsize-value, vars.$base-value)}rem;
 	}
 
+	--def-max-zindex: 2000;
 	--def-font-family: "Microsoft Yahei";
 	@include colors.generate-color-variables;
 }
@@ -261,6 +262,14 @@ html {
 		margin: #{$-value}px;
 	}
 
+	.background-size-#{$-value} {
+		background-size: #{$-value}px #{$-value}px;
+	}
+
+	.background-size-#{$-value}p {
+		background-size: percentage($number: div($-value, 100)) percentage($number: div($-value, 100));
+	}
+
 	@each $-key in vars.$rectangle {
 		.padding-#{$-key}-#{$-value} {
 			padding-#{$-key}: #{$-value}px;
@@ -296,6 +305,41 @@ html {
 			}
 		}
 	}
+}
+
+.no-radius {
+	border-radius: 0;
+}
+
+@each $-key, $-value in vars.$border-radius-map {
+	.radius-#{$-key} {
+		border-radius: #{div($-value, vars.$base-value)}rem;
+	}
+}
+
+.circle {
+	border-radius: percentage($number: 0.5);
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.background-icon {
+	background: {
+		repeat: no-repeat;
+		position: center center;
+	}
+}
+
+.responsive-horizontal {
+	@extend .width-100p;
+	@extend .auto-height;
+}
+
+.responsive-vertical {
+	@extend .height-100p;
+	@extend .auto-width;
 }
 
 a,

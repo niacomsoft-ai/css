@@ -30,7 +30,7 @@
 
 "@niacomsoft/css-themes@file:D:\\Git\\@i\\css\\packages\\themes":
   "resolved" "file:packages/themes"
-  "version" "1.0.0"
+  "version" "1.0.1"
 
 "@types/minimist@^1.2.0":
   "integrity" "sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ=="

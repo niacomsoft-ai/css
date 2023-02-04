@@ -12,6 +12,12 @@ $textsize-map: (
 	"-xxxl": 24,
 );
 
+$border-radius-map: (
+	"sm": 2,
+	"base": 4,
+	"lg": 8,
+);
+
 $flexalign-basemap: (
 	"center": "center",
 	"start": "flex-start",

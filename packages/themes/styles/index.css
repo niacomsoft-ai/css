@@ -12,6 +12,7 @@
   --def-text-xl: 1.25rem;
   --def-text-xxl: 1.375rem;
   --def-text-xxxl: 1.5rem;
+  --def-max-zindex: 2000;
   --def-font-family: "Microsoft Yahei";
   --def-red-50: #ffebee;
   --def-red-100: #ffcdd2;
@@ -2533,10 +2534,10 @@
   margin-left: 0;
 }
 
-.auto-width {
+.auto-width, .responsive-vertical {
   width: auto;
 }
-.auto-height {
+.auto-height, .responsive-horizontal {
   height: auto;
 }
 .auto-line-height {
@@ -2637,6 +2638,14 @@
   margin: 1px;
 }
 
+.background-size-1 {
+  background-size: 1px 1px;
+}
+
+.background-size-1p {
+  background-size: 1% 1%;
+}
+
 .padding-top-1 {
   padding-top: 1px;
 }
@@ -2731,6 +2740,14 @@
 
 .margin-2 {
   margin: 2px;
+}
+
+.background-size-2 {
+  background-size: 2px 2px;
+}
+
+.background-size-2p {
+  background-size: 2% 2%;
 }
 
 .padding-top-2 {
@@ -2829,6 +2846,14 @@
   margin: 3px;
 }
 
+.background-size-3 {
+  background-size: 3px 3px;
+}
+
+.background-size-3p {
+  background-size: 3% 3%;
+}
+
 .padding-top-3 {
   padding-top: 3px;
 }
@@ -2923,6 +2948,14 @@
 
 .margin-4 {
   margin: 4px;
+}
+
+.background-size-4 {
+  background-size: 4px 4px;
+}
+
+.background-size-4p {
+  background-size: 4% 4%;
 }
 
 .padding-top-4 {
@@ -3021,6 +3054,14 @@
   margin: 5px;
 }
 
+.background-size-5 {
+  background-size: 5px 5px;
+}
+
+.background-size-5p {
+  background-size: 5% 5%;
+}
+
 .padding-top-5 {
   padding-top: 5px;
 }
@@ -3115,6 +3156,14 @@
 
 .margin-6 {
   margin: 6px;
+}
+
+.background-size-6 {
+  background-size: 6px 6px;
+}
+
+.background-size-6p {
+  background-size: 6% 6%;
 }
 
 .padding-top-6 {
@@ -3213,6 +3262,14 @@
   margin: 7px;
 }
 
+.background-size-7 {
+  background-size: 7px 7px;
+}
+
+.background-size-7p {
+  background-size: 7% 7%;
+}
+
 .padding-top-7 {
   padding-top: 7px;
 }
@@ -3307,6 +3364,14 @@
 
 .margin-8 {
   margin: 8px;
+}
+
+.background-size-8 {
+  background-size: 8px 8px;
+}
+
+.background-size-8p {
+  background-size: 8% 8%;
 }
 
 .padding-top-8 {
@@ -3405,6 +3470,14 @@
   margin: 9px;
 }
 
+.background-size-9 {
+  background-size: 9px 9px;
+}
+
+.background-size-9p {
+  background-size: 9% 9%;
+}
+
 .padding-top-9 {
   padding-top: 9px;
 }
@@ -3499,6 +3572,14 @@
 
 .margin-10 {
   margin: 10px;
+}
+
+.background-size-10 {
+  background-size: 10px 10px;
+}
+
+.background-size-10p {
+  background-size: 10% 10%;
 }
 
 .padding-top-10 {
@@ -3597,6 +3678,14 @@
   margin: 11px;
 }
 
+.background-size-11 {
+  background-size: 11px 11px;
+}
+
+.background-size-11p {
+  background-size: 11% 11%;
+}
+
 .padding-top-11 {
   padding-top: 11px;
 }
@@ -3691,6 +3780,14 @@
 
 .margin-12 {
   margin: 12px;
+}
+
+.background-size-12 {
+  background-size: 12px 12px;
+}
+
+.background-size-12p {
+  background-size: 12% 12%;
 }
 
 .padding-top-12 {
@@ -3789,6 +3886,14 @@
   margin: 13px;
 }
 
+.background-size-13 {
+  background-size: 13px 13px;
+}
+
+.background-size-13p {
+  background-size: 13% 13%;
+}
+
 .padding-top-13 {
   padding-top: 13px;
 }
@@ -3883,6 +3988,14 @@
 
 .margin-14 {
   margin: 14px;
+}
+
+.background-size-14 {
+  background-size: 14px 14px;
+}
+
+.background-size-14p {
+  background-size: 14% 14%;
 }
 
 .padding-top-14 {
@@ -3981,6 +4094,14 @@
   margin: 15px;
 }
 
+.background-size-15 {
+  background-size: 15px 15px;
+}
+
+.background-size-15p {
+  background-size: 15% 15%;
+}
+
 .padding-top-15 {
   padding-top: 15px;
 }
@@ -4075,6 +4196,14 @@
 
 .margin-16 {
   margin: 16px;
+}
+
+.background-size-16 {
+  background-size: 16px 16px;
+}
+
+.background-size-16p {
+  background-size: 16% 16%;
 }
 
 .padding-top-16 {
@@ -4173,6 +4302,14 @@
   margin: 17px;
 }
 
+.background-size-17 {
+  background-size: 17px 17px;
+}
+
+.background-size-17p {
+  background-size: 17% 17%;
+}
+
 .padding-top-17 {
   padding-top: 17px;
 }
@@ -4267,6 +4404,14 @@
 
 .margin-18 {
   margin: 18px;
+}
+
+.background-size-18 {
+  background-size: 18px 18px;
+}
+
+.background-size-18p {
+  background-size: 18% 18%;
 }
 
 .padding-top-18 {
@@ -4365,6 +4510,14 @@
   margin: 19px;
 }
 
+.background-size-19 {
+  background-size: 19px 19px;
+}
+
+.background-size-19p {
+  background-size: 19% 19%;
+}
+
 .padding-top-19 {
   padding-top: 19px;
 }
@@ -4459,6 +4612,14 @@
 
 .margin-20 {
   margin: 20px;
+}
+
+.background-size-20 {
+  background-size: 20px 20px;
+}
+
+.background-size-20p {
+  background-size: 20% 20%;
 }
 
 .padding-top-20 {
@@ -4557,6 +4718,14 @@
   margin: 21px;
 }
 
+.background-size-21 {
+  background-size: 21px 21px;
+}
+
+.background-size-21p {
+  background-size: 21% 21%;
+}
+
 .padding-top-21 {
   padding-top: 21px;
 }
@@ -4651,6 +4820,14 @@
 
 .margin-22 {
   margin: 22px;
+}
+
+.background-size-22 {
+  background-size: 22px 22px;
+}
+
+.background-size-22p {
+  background-size: 22% 22%;
 }
 
 .padding-top-22 {
@@ -4749,6 +4926,14 @@
   margin: 23px;
 }
 
+.background-size-23 {
+  background-size: 23px 23px;
+}
+
+.background-size-23p {
+  background-size: 23% 23%;
+}
+
 .padding-top-23 {
   padding-top: 23px;
 }
@@ -4843,6 +5028,14 @@
 
 .margin-24 {
   margin: 24px;
+}
+
+.background-size-24 {
+  background-size: 24px 24px;
+}
+
+.background-size-24p {
+  background-size: 24% 24%;
 }
 
 .padding-top-24 {
@@ -4941,6 +5134,14 @@
   margin: 25px;
 }
 
+.background-size-25 {
+  background-size: 25px 25px;
+}
+
+.background-size-25p {
+  background-size: 25% 25%;
+}
+
 .padding-top-25 {
   padding-top: 25px;
 }
@@ -5035,6 +5236,14 @@
 
 .margin-26 {
   margin: 26px;
+}
+
+.background-size-26 {
+  background-size: 26px 26px;
+}
+
+.background-size-26p {
+  background-size: 26% 26%;
 }
 
 .padding-top-26 {
@@ -5133,6 +5342,14 @@
   margin: 27px;
 }
 
+.background-size-27 {
+  background-size: 27px 27px;
+}
+
+.background-size-27p {
+  background-size: 27% 27%;
+}
+
 .padding-top-27 {
   padding-top: 27px;
 }
@@ -5227,6 +5444,14 @@
 
 .margin-28 {
   margin: 28px;
+}
+
+.background-size-28 {
+  background-size: 28px 28px;
+}
+
+.background-size-28p {
+  background-size: 28% 28%;
 }
 
 .padding-top-28 {
@@ -5325,6 +5550,14 @@
   margin: 29px;
 }
 
+.background-size-29 {
+  background-size: 29px 29px;
+}
+
+.background-size-29p {
+  background-size: 29% 29%;
+}
+
 .padding-top-29 {
   padding-top: 29px;
 }
@@ -5419,6 +5652,14 @@
 
 .margin-30 {
   margin: 30px;
+}
+
+.background-size-30 {
+  background-size: 30px 30px;
+}
+
+.background-size-30p {
+  background-size: 30% 30%;
 }
 
 .padding-top-30 {
@@ -5517,6 +5758,14 @@
   margin: 31px;
 }
 
+.background-size-31 {
+  background-size: 31px 31px;
+}
+
+.background-size-31p {
+  background-size: 31% 31%;
+}
+
 .padding-top-31 {
   padding-top: 31px;
 }
@@ -5611,6 +5860,14 @@
 
 .margin-32 {
   margin: 32px;
+}
+
+.background-size-32 {
+  background-size: 32px 32px;
+}
+
+.background-size-32p {
+  background-size: 32% 32%;
 }
 
 .padding-top-32 {
@@ -5709,6 +5966,14 @@
   margin: 33px;
 }
 
+.background-size-33 {
+  background-size: 33px 33px;
+}
+
+.background-size-33p {
+  background-size: 33% 33%;
+}
+
 .padding-top-33 {
   padding-top: 33px;
 }
@@ -5803,6 +6068,14 @@
 
 .margin-34 {
   margin: 34px;
+}
+
+.background-size-34 {
+  background-size: 34px 34px;
+}
+
+.background-size-34p {
+  background-size: 34% 34%;
 }
 
 .padding-top-34 {
@@ -5901,6 +6174,14 @@
   margin: 35px;
 }
 
+.background-size-35 {
+  background-size: 35px 35px;
+}
+
+.background-size-35p {
+  background-size: 35% 35%;
+}
+
 .padding-top-35 {
   padding-top: 35px;
 }
@@ -5995,6 +6276,14 @@
 
 .margin-36 {
   margin: 36px;
+}
+
+.background-size-36 {
+  background-size: 36px 36px;
+}
+
+.background-size-36p {
+  background-size: 36% 36%;
 }
 
 .padding-top-36 {
@@ -6093,6 +6382,14 @@
   margin: 37px;
 }
 
+.background-size-37 {
+  background-size: 37px 37px;
+}
+
+.background-size-37p {
+  background-size: 37% 37%;
+}
+
 .padding-top-37 {
   padding-top: 37px;
 }
@@ -6187,6 +6484,14 @@
 
 .margin-38 {
   margin: 38px;
+}
+
+.background-size-38 {
+  background-size: 38px 38px;
+}
+
+.background-size-38p {
+  background-size: 38% 38%;
 }
 
 .padding-top-38 {
@@ -6285,6 +6590,14 @@
   margin: 39px;
 }
 
+.background-size-39 {
+  background-size: 39px 39px;
+}
+
+.background-size-39p {
+  background-size: 39% 39%;
+}
+
 .padding-top-39 {
   padding-top: 39px;
 }
@@ -6379,6 +6692,14 @@
 
 .margin-40 {
   margin: 40px;
+}
+
+.background-size-40 {
+  background-size: 40px 40px;
+}
+
+.background-size-40p {
+  background-size: 40% 40%;
 }
 
 .padding-top-40 {
@@ -6477,6 +6798,14 @@
   margin: 41px;
 }
 
+.background-size-41 {
+  background-size: 41px 41px;
+}
+
+.background-size-41p {
+  background-size: 41% 41%;
+}
+
 .padding-top-41 {
   padding-top: 41px;
 }
@@ -6571,6 +6900,14 @@
 
 .margin-42 {
   margin: 42px;
+}
+
+.background-size-42 {
+  background-size: 42px 42px;
+}
+
+.background-size-42p {
+  background-size: 42% 42%;
 }
 
 .padding-top-42 {
@@ -6669,6 +7006,14 @@
   margin: 43px;
 }
 
+.background-size-43 {
+  background-size: 43px 43px;
+}
+
+.background-size-43p {
+  background-size: 43% 43%;
+}
+
 .padding-top-43 {
   padding-top: 43px;
 }
@@ -6763,6 +7108,14 @@
 
 .margin-44 {
   margin: 44px;
+}
+
+.background-size-44 {
+  background-size: 44px 44px;
+}
+
+.background-size-44p {
+  background-size: 44% 44%;
 }
 
 .padding-top-44 {
@@ -6861,6 +7214,14 @@
   margin: 45px;
 }
 
+.background-size-45 {
+  background-size: 45px 45px;
+}
+
+.background-size-45p {
+  background-size: 45% 45%;
+}
+
 .padding-top-45 {
   padding-top: 45px;
 }
@@ -6955,6 +7316,14 @@
 
 .margin-46 {
   margin: 46px;
+}
+
+.background-size-46 {
+  background-size: 46px 46px;
+}
+
+.background-size-46p {
+  background-size: 46% 46%;
 }
 
 .padding-top-46 {
@@ -7053,6 +7422,14 @@
   margin: 47px;
 }
 
+.background-size-47 {
+  background-size: 47px 47px;
+}
+
+.background-size-47p {
+  background-size: 47% 47%;
+}
+
 .padding-top-47 {
   padding-top: 47px;
 }
@@ -7147,6 +7524,14 @@
 
 .margin-48 {
   margin: 48px;
+}
+
+.background-size-48 {
+  background-size: 48px 48px;
+}
+
+.background-size-48p {
+  background-size: 48% 48%;
 }
 
 .padding-top-48 {
@@ -7245,6 +7630,14 @@
   margin: 49px;
 }
 
+.background-size-49 {
+  background-size: 49px 49px;
+}
+
+.background-size-49p {
+  background-size: 49% 49%;
+}
+
 .padding-top-49 {
   padding-top: 49px;
 }
@@ -7339,6 +7732,14 @@
 
 .margin-50 {
   margin: 50px;
+}
+
+.background-size-50 {
+  background-size: 50px 50px;
+}
+
+.background-size-50p {
+  background-size: 50% 50%;
 }
 
 .padding-top-50 {
@@ -7437,6 +7838,14 @@
   margin: 51px;
 }
 
+.background-size-51 {
+  background-size: 51px 51px;
+}
+
+.background-size-51p {
+  background-size: 51% 51%;
+}
+
 .padding-top-51 {
   padding-top: 51px;
 }
@@ -7531,6 +7940,14 @@
 
 .margin-52 {
   margin: 52px;
+}
+
+.background-size-52 {
+  background-size: 52px 52px;
+}
+
+.background-size-52p {
+  background-size: 52% 52%;
 }
 
 .padding-top-52 {
@@ -7629,6 +8046,14 @@
   margin: 53px;
 }
 
+.background-size-53 {
+  background-size: 53px 53px;
+}
+
+.background-size-53p {
+  background-size: 53% 53%;
+}
+
 .padding-top-53 {
   padding-top: 53px;
 }
@@ -7723,6 +8148,14 @@
 
 .margin-54 {
   margin: 54px;
+}
+
+.background-size-54 {
+  background-size: 54px 54px;
+}
+
+.background-size-54p {
+  background-size: 54% 54%;
 }
 
 .padding-top-54 {
@@ -7821,6 +8254,14 @@
   margin: 55px;
 }
 
+.background-size-55 {
+  background-size: 55px 55px;
+}
+
+.background-size-55p {
+  background-size: 55% 55%;
+}
+
 .padding-top-55 {
   padding-top: 55px;
 }
@@ -7915,6 +8356,14 @@
 
 .margin-56 {
   margin: 56px;
+}
+
+.background-size-56 {
+  background-size: 56px 56px;
+}
+
+.background-size-56p {
+  background-size: 56% 56%;
 }
 
 .padding-top-56 {
@@ -8013,6 +8462,14 @@
   margin: 57px;
 }
 
+.background-size-57 {
+  background-size: 57px 57px;
+}
+
+.background-size-57p {
+  background-size: 57% 57%;
+}
+
 .padding-top-57 {
   padding-top: 57px;
 }
@@ -8107,6 +8564,14 @@
 
 .margin-58 {
   margin: 58px;
+}
+
+.background-size-58 {
+  background-size: 58px 58px;
+}
+
+.background-size-58p {
+  background-size: 58% 58%;
 }
 
 .padding-top-58 {
@@ -8205,6 +8670,14 @@
   margin: 59px;
 }
 
+.background-size-59 {
+  background-size: 59px 59px;
+}
+
+.background-size-59p {
+  background-size: 59% 59%;
+}
+
 .padding-top-59 {
   padding-top: 59px;
 }
@@ -8299,6 +8772,14 @@
 
 .margin-60 {
   margin: 60px;
+}
+
+.background-size-60 {
+  background-size: 60px 60px;
+}
+
+.background-size-60p {
+  background-size: 60% 60%;
 }
 
 .padding-top-60 {
@@ -8397,6 +8878,14 @@
   margin: 61px;
 }
 
+.background-size-61 {
+  background-size: 61px 61px;
+}
+
+.background-size-61p {
+  background-size: 61% 61%;
+}
+
 .padding-top-61 {
   padding-top: 61px;
 }
@@ -8491,6 +8980,14 @@
 
 .margin-62 {
   margin: 62px;
+}
+
+.background-size-62 {
+  background-size: 62px 62px;
+}
+
+.background-size-62p {
+  background-size: 62% 62%;
 }
 
 .padding-top-62 {
@@ -8589,6 +9086,14 @@
   margin: 63px;
 }
 
+.background-size-63 {
+  background-size: 63px 63px;
+}
+
+.background-size-63p {
+  background-size: 63% 63%;
+}
+
 .padding-top-63 {
   padding-top: 63px;
 }
@@ -8683,6 +9188,14 @@
 
 .margin-64 {
   margin: 64px;
+}
+
+.background-size-64 {
+  background-size: 64px 64px;
+}
+
+.background-size-64p {
+  background-size: 64% 64%;
 }
 
 .padding-top-64 {
@@ -8781,6 +9294,14 @@
   margin: 65px;
 }
 
+.background-size-65 {
+  background-size: 65px 65px;
+}
+
+.background-size-65p {
+  background-size: 65% 65%;
+}
+
 .padding-top-65 {
   padding-top: 65px;
 }
@@ -8875,6 +9396,14 @@
 
 .margin-66 {
   margin: 66px;
+}
+
+.background-size-66 {
+  background-size: 66px 66px;
+}
+
+.background-size-66p {
+  background-size: 66% 66%;
 }
 
 .padding-top-66 {
@@ -8973,6 +9502,14 @@
   margin: 67px;
 }
 
+.background-size-67 {
+  background-size: 67px 67px;
+}
+
+.background-size-67p {
+  background-size: 67% 67%;
+}
+
 .padding-top-67 {
   padding-top: 67px;
 }
@@ -9067,6 +9604,14 @@
 
 .margin-68 {
   margin: 68px;
+}
+
+.background-size-68 {
+  background-size: 68px 68px;
+}
+
+.background-size-68p {
+  background-size: 68% 68%;
 }
 
 .padding-top-68 {
@@ -9165,6 +9710,14 @@
   margin: 69px;
 }
 
+.background-size-69 {
+  background-size: 69px 69px;
+}
+
+.background-size-69p {
+  background-size: 69% 69%;
+}
+
 .padding-top-69 {
   padding-top: 69px;
 }
@@ -9259,6 +9812,14 @@
 
 .margin-70 {
   margin: 70px;
+}
+
+.background-size-70 {
+  background-size: 70px 70px;
+}
+
+.background-size-70p {
+  background-size: 70% 70%;
 }
 
 .padding-top-70 {
@@ -9357,6 +9918,14 @@
   margin: 71px;
 }
 
+.background-size-71 {
+  background-size: 71px 71px;
+}
+
+.background-size-71p {
+  background-size: 71% 71%;
+}
+
 .padding-top-71 {
   padding-top: 71px;
 }
@@ -9451,6 +10020,14 @@
 
 .margin-72 {
   margin: 72px;
+}
+
+.background-size-72 {
+  background-size: 72px 72px;
+}
+
+.background-size-72p {
+  background-size: 72% 72%;
 }
 
 .padding-top-72 {
@@ -9549,6 +10126,14 @@
   margin: 73px;
 }
 
+.background-size-73 {
+  background-size: 73px 73px;
+}
+
+.background-size-73p {
+  background-size: 73% 73%;
+}
+
 .padding-top-73 {
   padding-top: 73px;
 }
@@ -9643,6 +10228,14 @@
 
 .margin-74 {
   margin: 74px;
+}
+
+.background-size-74 {
+  background-size: 74px 74px;
+}
+
+.background-size-74p {
+  background-size: 74% 74%;
 }
 
 .padding-top-74 {
@@ -9741,6 +10334,14 @@
   margin: 75px;
 }
 
+.background-size-75 {
+  background-size: 75px 75px;
+}
+
+.background-size-75p {
+  background-size: 75% 75%;
+}
+
 .padding-top-75 {
   padding-top: 75px;
 }
@@ -9835,6 +10436,14 @@
 
 .margin-76 {
   margin: 76px;
+}
+
+.background-size-76 {
+  background-size: 76px 76px;
+}
+
+.background-size-76p {
+  background-size: 76% 76%;
 }
 
 .padding-top-76 {
@@ -9933,6 +10542,14 @@
   margin: 77px;
 }
 
+.background-size-77 {
+  background-size: 77px 77px;
+}
+
+.background-size-77p {
+  background-size: 77% 77%;
+}
+
 .padding-top-77 {
   padding-top: 77px;
 }
@@ -10027,6 +10644,14 @@
 
 .margin-78 {
   margin: 78px;
+}
+
+.background-size-78 {
+  background-size: 78px 78px;
+}
+
+.background-size-78p {
+  background-size: 78% 78%;
 }
 
 .padding-top-78 {
@@ -10125,6 +10750,14 @@
   margin: 79px;
 }
 
+.background-size-79 {
+  background-size: 79px 79px;
+}
+
+.background-size-79p {
+  background-size: 79% 79%;
+}
+
 .padding-top-79 {
   padding-top: 79px;
 }
@@ -10219,6 +10852,14 @@
 
 .margin-80 {
   margin: 80px;
+}
+
+.background-size-80 {
+  background-size: 80px 80px;
+}
+
+.background-size-80p {
+  background-size: 80% 80%;
 }
 
 .padding-top-80 {
@@ -10317,6 +10958,14 @@
   margin: 81px;
 }
 
+.background-size-81 {
+  background-size: 81px 81px;
+}
+
+.background-size-81p {
+  background-size: 81% 81%;
+}
+
 .padding-top-81 {
   padding-top: 81px;
 }
@@ -10411,6 +11060,14 @@
 
 .margin-82 {
   margin: 82px;
+}
+
+.background-size-82 {
+  background-size: 82px 82px;
+}
+
+.background-size-82p {
+  background-size: 82% 82%;
 }
 
 .padding-top-82 {
@@ -10509,6 +11166,14 @@
   margin: 83px;
 }
 
+.background-size-83 {
+  background-size: 83px 83px;
+}
+
+.background-size-83p {
+  background-size: 83% 83%;
+}
+
 .padding-top-83 {
   padding-top: 83px;
 }
@@ -10603,6 +11268,14 @@
 
 .margin-84 {
   margin: 84px;
+}
+
+.background-size-84 {
+  background-size: 84px 84px;
+}
+
+.background-size-84p {
+  background-size: 84% 84%;
 }
 
 .padding-top-84 {
@@ -10701,6 +11374,14 @@
   margin: 85px;
 }
 
+.background-size-85 {
+  background-size: 85px 85px;
+}
+
+.background-size-85p {
+  background-size: 85% 85%;
+}
+
 .padding-top-85 {
   padding-top: 85px;
 }
@@ -10795,6 +11476,14 @@
 
 .margin-86 {
   margin: 86px;
+}
+
+.background-size-86 {
+  background-size: 86px 86px;
+}
+
+.background-size-86p {
+  background-size: 86% 86%;
 }
 
 .padding-top-86 {
@@ -10893,6 +11582,14 @@
   margin: 87px;
 }
 
+.background-size-87 {
+  background-size: 87px 87px;
+}
+
+.background-size-87p {
+  background-size: 87% 87%;
+}
+
 .padding-top-87 {
   padding-top: 87px;
 }
@@ -10987,6 +11684,14 @@
 
 .margin-88 {
   margin: 88px;
+}
+
+.background-size-88 {
+  background-size: 88px 88px;
+}
+
+.background-size-88p {
+  background-size: 88% 88%;
 }
 
 .padding-top-88 {
@@ -11085,6 +11790,14 @@
   margin: 89px;
 }
 
+.background-size-89 {
+  background-size: 89px 89px;
+}
+
+.background-size-89p {
+  background-size: 89% 89%;
+}
+
 .padding-top-89 {
   padding-top: 89px;
 }
@@ -11179,6 +11892,14 @@
 
 .margin-90 {
   margin: 90px;
+}
+
+.background-size-90 {
+  background-size: 90px 90px;
+}
+
+.background-size-90p {
+  background-size: 90% 90%;
 }
 
 .padding-top-90 {
@@ -11277,6 +11998,14 @@
   margin: 91px;
 }
 
+.background-size-91 {
+  background-size: 91px 91px;
+}
+
+.background-size-91p {
+  background-size: 91% 91%;
+}
+
 .padding-top-91 {
   padding-top: 91px;
 }
@@ -11371,6 +12100,14 @@
 
 .margin-92 {
   margin: 92px;
+}
+
+.background-size-92 {
+  background-size: 92px 92px;
+}
+
+.background-size-92p {
+  background-size: 92% 92%;
 }
 
 .padding-top-92 {
@@ -11469,6 +12206,14 @@
   margin: 93px;
 }
 
+.background-size-93 {
+  background-size: 93px 93px;
+}
+
+.background-size-93p {
+  background-size: 93% 93%;
+}
+
 .padding-top-93 {
   padding-top: 93px;
 }
@@ -11563,6 +12308,14 @@
 
 .margin-94 {
   margin: 94px;
+}
+
+.background-size-94 {
+  background-size: 94px 94px;
+}
+
+.background-size-94p {
+  background-size: 94% 94%;
 }
 
 .padding-top-94 {
@@ -11661,6 +12414,14 @@
   margin: 95px;
 }
 
+.background-size-95 {
+  background-size: 95px 95px;
+}
+
+.background-size-95p {
+  background-size: 95% 95%;
+}
+
 .padding-top-95 {
   padding-top: 95px;
 }
@@ -11755,6 +12516,14 @@
 
 .margin-96 {
   margin: 96px;
+}
+
+.background-size-96 {
+  background-size: 96px 96px;
+}
+
+.background-size-96p {
+  background-size: 96% 96%;
 }
 
 .padding-top-96 {
@@ -11853,6 +12622,14 @@
   margin: 97px;
 }
 
+.background-size-97 {
+  background-size: 97px 97px;
+}
+
+.background-size-97p {
+  background-size: 97% 97%;
+}
+
 .padding-top-97 {
   padding-top: 97px;
 }
@@ -11947,6 +12724,14 @@
 
 .margin-98 {
   margin: 98px;
+}
+
+.background-size-98 {
+  background-size: 98px 98px;
+}
+
+.background-size-98p {
+  background-size: 98% 98%;
 }
 
 .padding-top-98 {
@@ -12045,6 +12830,14 @@
   margin: 99px;
 }
 
+.background-size-99 {
+  background-size: 99px 99px;
+}
+
+.background-size-99p {
+  background-size: 99% 99%;
+}
+
 .padding-top-99 {
   padding-top: 99px;
 }
@@ -12081,7 +12874,7 @@
   width: 100px;
 }
 
-.width-100p {
+.width-100p, .responsive-horizontal {
   width: 100%;
 }
 
@@ -12105,7 +12898,7 @@
   height: 100px;
 }
 
-.height-100p {
+.height-100p, .responsive-vertical {
   height: 100%;
 }
 
@@ -12139,6 +12932,14 @@
 
 .margin-100 {
   margin: 100px;
+}
+
+.background-size-100 {
+  background-size: 100px 100px;
+}
+
+.background-size-100p {
+  background-size: 100% 100%;
 }
 
 .padding-top-100 {
@@ -12252,6 +13053,35 @@
 .throughline-wavy {
   -webkit-text-decoration-style: wavy;
           text-decoration-style: wavy;
+}
+
+.no-radius {
+  border-radius: 0;
+}
+
+.radius-sm {
+  border-radius: 0.125rem;
+}
+
+.radius-base {
+  border-radius: 0.25rem;
+}
+
+.radius-lg {
+  border-radius: 0.5rem;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.background-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 a,
