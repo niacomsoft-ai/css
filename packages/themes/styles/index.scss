@@ -6,6 +6,7 @@
 @use "sass:math" as *;
 @use "sass:map" as *;
 @use "./lib/variables" as vars;
+@use "./lib/colors" as colors;
 
 :root {
 	@each $-textsize-key, $-textsize-value in vars.$textsize-map {
@@ -13,6 +14,17 @@
 	}
 
 	--def-font-family: "Microsoft Yahei";
+	@include colors.generate-color-variables;
+}
+
+@each $-key in vars.$color-list {
+	.#{$-key} {
+		background-color: var(--def-#{$-key});
+	}
+
+	.#{$-key}-text {
+		background-color: var(--def-#{$-key});
+	}
 }
 
 .text {
@@ -91,7 +103,7 @@
 		flex-grow: 1;
 	}
 
-	> .noshrink {
+	> .no-shrink {
 		flex-shrink: 0;
 	}
 }
