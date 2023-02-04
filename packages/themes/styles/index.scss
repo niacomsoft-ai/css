@@ -17,6 +17,10 @@
 	@include colors.generate-color-variables;
 }
 
+.transparent {
+	background-color: transparent;
+}
+
 @each $-key in vars.$color-list {
 	.#{$-key} {
 		background-color: var(--def-#{$-key});
@@ -118,4 +122,186 @@ div {
 
 html {
 	@extend .text-reference;
+}
+
+.no {
+	&-width {
+		width: 0;
+	}
+
+	&-height {
+		height: 0;
+	}
+
+	&-line-height {
+		line-height: 0;
+	}
+
+	&-border {
+		border: 0 none transparent;
+	}
+
+	&-padding {
+		padding: 0;
+	}
+
+	&-margin {
+		margin: 0;
+	}
+
+	@each $-key in vars.$rectangle {
+		&-#{$-key}-border {
+			border-#{$-key}: 0 none transparent;
+		}
+
+		&-#{$-key}-padding {
+			padding-#{$-key}: 0;
+		}
+
+		&-#{$-key}-margin {
+			margin-#{$-key}: 0;
+		}
+	}
+}
+
+.auto {
+	&-width {
+		width: auto;
+	}
+
+	&-height {
+		height: auto;
+	}
+
+	&-line-height {
+		line-height: auto;
+	}
+
+	&-padding {
+		padding: auto;
+	}
+
+	&-margin {
+		margin: auto;
+	}
+
+	@each $-key in vars.$rectangle {
+		&-padding -#{$-key} {
+			padding-#{$-key}: auto;
+		}
+
+		&-margin-#{$-key} {
+			margin-#{$-key}: auto;
+		}
+	}
+}
+
+@for $-value from 1 through 100 {
+	.width-#{$-value} {
+		width: #{$-value}px;
+	}
+
+	.width-#{$-value}p {
+		width: percentage($number: div($-value, 100));
+	}
+
+	.max-width-#{$-value} {
+		max-width: #{$-value}px;
+	}
+
+	.max-width-#{$-value}p {
+		max-width: percentage($number: div($-value, 100));
+	}
+
+	.min-width-#{$-value} {
+		min-width: #{$-value}px;
+	}
+
+	.min-width-#{$-value}p {
+		min-width: percentage($number: div($-value, 100));
+	}
+
+	.height-#{$-value} {
+		height: #{$-value}px;
+	}
+
+	.height-#{$-value}p {
+		height: percentage($number: div($-value, 100));
+	}
+
+	.max-height-#{$-value} {
+		max-height: #{$-value}px;
+	}
+
+	.max-height-#{$-value}p {
+		max-height: percentage($number: div($-value, 100));
+	}
+
+	.min-height-#{$-value} {
+		min-height: #{$-value}px;
+	}
+
+	.min-height-#{$-value}p {
+		min-height: percentage($number: div($-value, 100));
+	}
+
+	.line-height-#{$-value} {
+		line-height: #{$-value}px;
+	}
+
+	.line-height-#{$-value}p {
+		line-height: percentage($number: div($-value, 100));
+	}
+
+	.padding-#{$-value} {
+		padding: #{$-value}px;
+	}
+
+	.margin-#{$-value} {
+		margin: #{$-value}px;
+	}
+
+	@each $-key in vars.$rectangle {
+		.padding-#{$-key}-#{$-value} {
+			padding-#{$-key}: #{$-value}px;
+		}
+
+		.margin-#{$-key}-#{$-value} {
+			margin-#{$-key}: #{$-value}px;
+		}
+	}
+}
+
+@each $-item in (uppercase, lowercase) {
+	.#{$-item} {
+		text-transform: #{$-item};
+	}
+}
+
+@each $-item in vars.$textalign-list {
+	.text-#{$-item} {
+		text-align: #{$-item};
+		text-decoration: line-through;
+	}
+}
+
+@each $-key, $-value in ("underline": "underline", "throughline": "line-through") {
+	.#{$-key} {
+		text-decoration-line: #{$-value};
+
+		@each $-item in ("solid", "double", "dotted", "dashed", "wavy") {
+			@at-root &-#{$-item} {
+				@extend .#{$-key};
+				text-decoration-style: #{$-item};
+			}
+		}
+	}
+}
+
+a,
+a:hover,
+a:focus,
+a:link,
+a:visited {
+	text-decoration: none;
 }
