@@ -1,0 +1,33 @@
+{
+  "name": "@niacomsoft/css-themes-integrated",
+  "version": "1.0.0",
+  "description": "CSS Integrated Composition-API.",
+  "main": "compile/index.js",
+  "types": "compile/index.d.ts",
+  "typings": "compile/index.d.ts",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niacomsoft-ai/css.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "JavaScript",
+    "Integrated",
+    "Composition-API"
+  ],
+  "author": "Wang Yucai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niacomsoft-ai/css/issues"
+  },
+  "homepage": "https://github.com/niacomsoft-ai/css#readme",
+  "dependencies": {
+    "@niacomsoft/css-themes": "^1.0.0"
+  }
+}

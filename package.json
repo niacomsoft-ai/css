@@ -29,6 +29,7 @@
     "standard-version": "^9.5.0"
   },
   "workspaces": [
-    "packages/themes"
+    "packages/themes",
+    "packages/integrated"
   ]
 }
