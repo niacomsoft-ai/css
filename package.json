@@ -2,7 +2,7 @@
   "name": "@niacomsoft/css",
   "version": "1.0.0-build.0",
   "description": "Niacomsoft App Infrastructure: CSS!",
-  "repository": "git@jihulab.com:niacomsoft-ai/css.git",
+  "repository": "git@github.com:niacomsoft-ai/css.git",
   "author": "Wang Yucai <netowls-studio@outlook.com>",
   "license": "MIT",
   "private": true,
