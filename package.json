@@ -23,7 +23,8 @@
     "npm-version:pre-major": "npm version premajor --no-git-tag-version --workspaces",
     "npm-version:patch": "npm version patch --no-git-tag-version --workspaces",
     "npm-version:minor": "npm version minor --no-git-tag-version --workspaces",
-    "npm-version:major": "npm version major --no-git-tag-version --workspaces"
+    "npm-version:major": "npm version major --no-git-tag-version --workspaces",
+    "compile": "npm run compile -w packages/integrated"
   },
   "devDependencies": {
     "standard-version": "^9.5.0"
